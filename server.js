@@ -3,8 +3,12 @@ const app = express()
 const port = 3000
 const bodyParser = require('body-parser');
 const fs = require('fs')
+const path = require('path');
 
 app.use(bodyParser.json())
+
+//Return the API documentation
+app.get('/API-info',(req,res)=> res.sendFile(path.join(__dirname, 'html/index.html')))
 
 /*Receives a json file in the body of the request with this format to create a new product: 
 {
@@ -12,13 +16,11 @@ app.use(bodyParser.json())
     "modelo": "",
     "departamento": "",
     "descripcion": "",
-    "precio": {
-        "pesos": "",
-        "dolares": ""
-    }    
+    "pesos": "",
+    "dolares": "" 
 }
 */
-app.put('/',function (req, res){
+app.put('/create-product',function (req, res){
     //Opening and parsing data.json to save the new product
     var data_file = fs.readFileSync('json_data/data.json')
     data_object = JSON.parse(data_file)
@@ -33,8 +35,8 @@ app.put('/',function (req, res){
     new_product['Info_producto']['modelo'] = req.body['modelo']
     new_product['Info_producto']['departamento'] = req.body['departamento']
     new_product['Info_producto']['descripcion'] = req.body['descripcion']
-    new_product['Info_producto']['precio']['pesos'] = req.body['precio']['pesos']
-    new_product['Info_producto']['precio']['dolares'] = req.body['precio']['dolares']
+    new_product['Info_producto']['precio']['MX'] = req.body['MX']
+    new_product['Info_producto']['precio']['US'] = req.body['US']
 
     //Adding the new product to the list of products
     data_object['productos'].push(new_product)

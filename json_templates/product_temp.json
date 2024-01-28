@@ -6,8 +6,8 @@
         "departamento":"Por ejemplo, hogar, ropa, comestibles, etc",
         "descripcion":"Descripción del producto",
         "precio":{
-            "pesos":"Valor con punto decimal",
-            "dolares":"Valor con punto decimal"
+            "MX":"Valor con punto decimal",
+            "US":"Valor con punto decimal"
         },
         "reviews":[]
     }
