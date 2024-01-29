@@ -3,16 +3,9 @@ const app = express()
 const port = 3000
 const bodyParser = require('body-parser')
 const fs = require('fs')
+const path = require('path')
 
 app.use(bodyParser.json())
-
-//Return the reviews of the selected product
-app.get('/consult-reviews/:id', function (req, res){
-    data = fs.readFileSync('json_data/data.json')
-    const jsonData = JSON.parse(data)
-    const { id  } = req.params
-    res.send(jsonData['productos'][id-1]['Info_producto']['reviews'])
-})
 
 //Return the API documentation
 app.get('/API-info',(req,res)=> res.sendFile(path.join(__dirname, 'html/index.html')))
@@ -59,5 +52,14 @@ app.put('/create-product',function (req, res){
     });
     res.send('Producto agregado con éxito')
 })
+
+//Return the reviews of the selected product
+app.get('/consult-reviews/:id', function (req, res){
+    data = fs.readFileSync('json_data/data.json')
+    const jsonData = JSON.parse(data)
+    const { id  } = req.params
+    res.send(jsonData['productos'][id-1]['Info_producto']['reviews'])
+})
+
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
