@@ -25,32 +25,17 @@ app.put('/create-product',function (req, res){
     var data_file = fs.readFileSync('json_data/data.json')
     data_object = JSON.parse(data_file)
 
-    //Opening and parsing the template for a new product
-    var temp = fs.readFileSync('json_templates/product_temp.json')
-    var new_product = JSON.parse(temp)
+    data_object["productos"].splice(req.params.index-1, 1);
+     //Converting the data object into json
+     data_to_save = JSON.stringify(data_object,null,4)
 
-    //Assigning the values from the req body to the new product
-    new_product['ID_producto'] = data_object['productos'].length + 1
-    new_product['Info_producto']['SKU'] = req.body['SKU']
-    new_product['Info_producto']['modelo'] = req.body['modelo']
-    new_product['Info_producto']['departamento'] = req.body['departamento']
-    new_product['Info_producto']['descripcion'] = req.body['descripcion']
-    new_product['Info_producto']['precio']['MX'] = req.body['MX']
-    new_product['Info_producto']['precio']['US'] = req.body['US']
-
-    //Adding the new product to the list of products
-    data_object['productos'].push(new_product)
-
-    //Converting the data object into json
-    data_to_save = JSON.stringify(data_object,null,4)
-
-    //Writing the new data into a json file
-    fs.writeFile('json_data/data.json', data_to_save, 'utf8',function(err) {
-        if (err) {
-            console.log(err);
-        }
-    });
-    res.send('Producto agregado con éxito')
+     //Writing the new data into a json file
+     fs.writeFile('json_data/data.json', data_to_save, 'utf8',function(err) {
+         if (err) {
+             console.log(err);
+         }
+     });
+    res.send("Se elimino correctamente")
 })
 
 //Return the reviews of the selected product
@@ -61,5 +46,21 @@ app.get('/consult-reviews/:id', function (req, res){
     res.send(jsonData['productos'][id-1]['Info_producto']['reviews'])
 })
 
+app.delete('/eliminar/:index', function(req,res) {
+    var data_file = fs.readFileSync('json_data/data.json')
+    data_object = JSON.parse(data_file)
+
+    data_object["productos"].splice(req.params.index-1, 1);
+     //Converting the data object into json
+     data_to_save = JSON.stringify(data_object,null,4)
+
+     //Writing the new data into a json file
+     fs.writeFile('json_data/data.json', data_to_save, 'utf8',function(err) {
+         if (err) {
+             console.log(err);
+         }
+     });
+    res.send("Se elimino correctamente")
+})
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
