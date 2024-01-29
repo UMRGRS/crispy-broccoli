@@ -4,19 +4,15 @@ const port = 3000
 const bodyParser = require('body-parser')
 const fs = require('fs')
 
+app.use(bodyParser.json())
 
+//Return the reviews of the selected product
 app.get('/consult-reviews/:id', function (req, res){
     data = fs.readFileSync('json_data/data.json')
     const jsonData = JSON.parse(data)
     const { id  } = req.params
     res.send(jsonData['productos'][id-1]['Info_producto']['reviews'])
 })
-
-const bodyParser = require('body-parser');
-const fs = require('fs')
-const path = require('path');
-
-app.use(bodyParser.json())
 
 //Return the API documentation
 app.get('/API-info',(req,res)=> res.sendFile(path.join(__dirname, 'html/index.html')))
