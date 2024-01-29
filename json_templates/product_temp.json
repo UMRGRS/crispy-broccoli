@@ -1,0 +1,14 @@
+{
+    "ID_producto": "Entero sin signo",
+    "Info_producto":{
+        "SKU":"Código de 6 cifras",
+        "modelo":"Modelo del producto",
+        "departamento":"Por ejemplo, hogar, ropa, comestibles, etc",
+        "descripcion":"Descripción del producto",
+        "precio":{
+            "MX":"Valor con punto decimal",
+            "US":"Valor con punto decimal"
+        },
+        "reviews":[]
+    }
+}
