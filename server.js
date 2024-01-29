@@ -10,6 +10,19 @@ app.use(bodyParser.json())
 //Return the API documentation
 app.get('/API-info',(req,res)=> res.sendFile(path.join(__dirname, 'html/index.html')))
 
+app.get('/search/:index',(req,res)=>{
+    var data_file = fs.readFileSync('json_data/data.json') // archivo jason
+    data_object = JSON.parse(data_file) //dicionario
+    res.json(data_object['productos'][req.params.index-1])
+});
+
+app.get('/alter/:index',(req,res)=>{
+    var data_file = fs.readFileSync('json_data/data.json') // archivo jason
+    data_object = JSON.parse(data_file) //dicionario
+    res.json(data_object['productos'][req.params.index-1])
+    
+});
+
 /*Receives a json file in the body of the request with this format to create a new product: 
 {
     "SKU": "",

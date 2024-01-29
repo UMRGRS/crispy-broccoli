@@ -8,7 +8,10 @@
                 "modelo": "bito",
                 "departamento": "bito",
                 "descripcion": "bito",
-                "precio": {},
+                "precio": {
+                    "MX": "bito2",
+                    "US": "bito2"
+                },
                 "reviews": []
             }
         },
