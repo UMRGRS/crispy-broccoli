@@ -1,6 +1,30 @@
 {
     "Comment": "Add dictionaries inside the list to save products",
     "productos": [
-
+        {
+            "ID_producto": 1,
+            "Info_producto": {
+                "SKU": "bito",
+                "modelo": "bito",
+                "departamento": "bito",
+                "descripcion": "bito",
+                "precio": {},
+                "reviews": []
+            }
+        },
+        {
+            "ID_producto": 2,
+            "Info_producto": {
+                "SKU": "bito2",
+                "modelo": "bito2",
+                "departamento": "bito2",
+                "descripcion": "bito2",
+                "precio": {
+                    "MX": "bito2",
+                    "US": "bito2"
+                },
+                "reviews": []
+            }
+        }
     ]
 }
