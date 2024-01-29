@@ -46,6 +46,7 @@ app.get('/consult-reviews/:id', function (req, res){
     res.send(jsonData['productos'][id-1]['Info_producto']['reviews'])
 })
 
+//Delete the selected product
 app.delete('/eliminar/:index', function(req,res) {
     var data_file = fs.readFileSync('json_data/data.json')
     data_object = JSON.parse(data_file)
