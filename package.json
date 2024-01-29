@@ -4,5 +4,15 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.3"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "crispy-broccoli",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

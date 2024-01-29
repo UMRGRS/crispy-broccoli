@@ -1,6 +1,58 @@
 {
     "Comment": "Add dictionaries inside the list to save products",
     "productos": [
-
+        {
+            "ID_producto": 1,
+            "Info_producto": {
+                "SKU": "0062225715",
+                "modelo": "BVSTDC05013",
+                "departamento": "Línea Blanca",
+                "descripcion": "Cafetera",
+                "precio": {
+                    "MX": "299",
+                    "US": "18"
+                },
+                "reviews": [{
+                    "ID_review": 1,
+                    "Info_review": {
+                    "fecha":"Fecha y hora",
+                    "calificacion":"Entero con rango 1-5",
+                    "texto":"reciew del prducto 1"
+                    }
+                }]
+            }
+        },
+        {
+            "ID_producto": 2,
+            "Info_producto": {
+                "SKU": "B079FTDMC9",
+                "modelo": "FV2833X0",
+                "departamento": "Línea Blanca",
+                "descripcion": "Cafetera",
+                "precio": {
+                    "MX": "299",
+                    "US": "18"
+                },
+                "reviews": [
+                    {
+                    "ID_review": 1,
+                    "Info_review": {
+                    "fecha":"Fecha y hora",
+                    "calificacion":"Entero con rango 1-5",
+                    "texto":"Review del producto 2"
+                    }
+                },
+                {
+                    "ID_review": 2,
+                    "Info_review": {
+                    "fecha":"Fecha y hora",
+                    "calificacion":"Entero con rango 1-5",
+                    "texto":"Review del producto 2 review 2"
+                    }
+                }
+                ]
+            }
+        }
+        
     ]
 }
