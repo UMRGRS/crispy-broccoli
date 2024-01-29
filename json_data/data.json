@@ -9,8 +9,8 @@
                 "departamento": "bito",
                 "descripcion": "bito",
                 "precio": {
-                    "MX": "bito2",
-                    "US": "bito2"
+                    "MX": "bito",
+                    "US": "bito"
                 },
                 "reviews": []
             }
