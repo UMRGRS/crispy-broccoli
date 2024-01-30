@@ -1,62 +1,98 @@
 {
-    "Comment": "Add dictionaries inside the list to save products",
     "productos": [
         {
-            "ID_producto": 1,
+            "ID_Producto": 1,
             "Info_producto": {
-                "SKU": "0062225715",
-                "modelo": "BVSTDC05013",
-                "departamento": "Línea Blanca",
-                "descripcion": "Cafetera",
+                "SKU": "123456",
+                "modelo": "H654-Gt",
+                "departamento": "Electronica",
+                "descripcion": "Computadora de escritorio",
                 "precio": {
-                    "MX": "299",
-                    "US": "18"
+                    "MX": "100",
+                    "US": "5"
                 },
                 "reviews": [
                     {
-                        "ID_review": 1,
                         "Info_review": {
-                            "fecha": "Fecha y hora",
-                            "calificacion": "Entero con rango 1-5",
-                            "texto": "reciew del prducto 1"
+                            "calificacion": 3,
+                            "texto": "Decente"
                         }
                     }
                 ]
             }
         },
         {
-            "ID_producto": 2,
+            "ID_Producto": 2,
             "Info_producto": {
-                "SKU": "B079FTDMC9",
-                "modelo": "FV2833X0",
-                "departamento": "Línea Blanca",
-                "descripcion": "Cafetera",
+                "SKU": "297564",
+                "modelo": "Yrt-564",
+                "departamento": "Juguetes",
+                "descripcion": "Vehículo de control remoto",
                 "precio": {
-                    "MX": "299",
-                    "US": "18"
+                    "MX": "1000",
+                    "US": "50"
                 },
-                "reviews": [
-                    {
-                        "ID_review": 1,
-                        "Info_review": {
-                            "fecha": "Fecha y hora",
-                            "calificacion": "Entero con rango 1-5",
-                            "texto": "Review del producto 2"
-                        }
-                    },
-                    {
-                        "ID_review": 2,
-                        "Info_review": {
-                            "fecha": "Fecha y hora",
-                            "calificacion": "Entero con rango 1-5",
-                            "texto": "Review del producto 2 review 2"
-                        }
-                    }
-                ]
+                "reviews": []
             }
         },
         {
-            "ID_producto": 3,
+            "ID_Producto": 3,
+            "Info_producto": {
+                "SKU": "761293",
+                "modelo": "U5634-we",
+                "departamento": "Juguetes",
+                "descripcion": "Set lego 1500pzs",
+                "precio": {
+                    "MX": "2000",
+                    "US": "100"
+                },
+                "reviews": []
+            }
+        },
+        {
+            "ID_Producto": 4,
+            "Info_producto": {
+                "SKU": "297564",
+                "modelo": "Yrt-564",
+                "departamento": "Juguetes",
+                "descripcion": "Vehículo de control remoto",
+                "precio": {
+                    "MX": "1000",
+                    "US": "50"
+                },
+                "reviews": []
+            }
+        },
+        {
+            "ID_Producto": 5,
+            "Info_producto": {
+                "SKU": "989343",
+                "modelo": "U76-oiu",
+                "departamento": "Dulcería",
+                "descripcion": "Gomitas enchiladas",
+                "precio": {
+                    "MX": "150",
+                    "US": "7.5"
+                },
+                "reviews": []
+            }
+        },
+        {
+            "ID_Producto": 6,
+            "Info_producto": {
+                "SKU": "124645",
+                "modelo": "U5634-we",
+                "departamento": "Dulcería",
+                "descripcion": "Almendras cubiertas de chocolate",
+                "precio": {
+                    "MX": "300",
+                    "US": "15"
+                },
+                "reviews": []
+            }
+        },
+        {
+            "ID_Producto": 7,
             "Info_producto": {
                 "SKU": "123456",
                 "modelo": "H654-Gt",

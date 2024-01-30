@@ -1,0 +1,6 @@
+{
+    "Info_review": {
+        "calificacion":"Entero con rango 1-5",
+        "texto":""
+    }
+}

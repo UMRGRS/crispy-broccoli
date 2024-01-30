@@ -1,8 +1,0 @@
-{
-    "ID_review": "Entero sin signo",
-    "Info_review": {
-        "fecha":"Fecha y hora",
-        "calificacion":"Entero con rango 1-5",
-        "texto":"Texto de la review"
-    }
-}

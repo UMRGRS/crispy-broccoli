@@ -1,5 +1,5 @@
 {
-    "ID_producto": "Entero sin signo",
+    "ID_Producto":"entero sin signo",
     "Info_producto":{
         "SKU":"Código de 6 cifras",
         "modelo":"Modelo del producto",

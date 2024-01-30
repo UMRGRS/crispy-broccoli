@@ -177,7 +177,7 @@
                             <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 <p class="btn btn-outline-danger btn-lg disabled m-2">DELETE</p>
-                                <p class="fs-4 m-2">End point</p>
+                                <p class="fs-4 m-2">/eliminar/id</p>
                             </button>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -201,46 +201,11 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>SKU</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
+                                                        <td>id</td>
+                                                        <td>URL</td>
+                                                        <td>Entero</td>
                                                         <td>Si</td>
-                                                        <td>Numero de referencia del producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>modelo</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Modelo del producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>departamento</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Departamento al que pertenece el producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>descripcion</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Breve descripción del producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>MX</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Valor del producto en pesos mexicanos</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>US</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Valor del producto en dólares americanos</td>
+                                                        <td>ID del producto</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -282,7 +247,7 @@
                             <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                 data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 <p class="btn btn-outline-info btn-lg disabled m-2">POST</p>
-                                <p class="fs-4 m-2">End point</p>
+                                <p class="fs-4 m-2">/update-product/id</p>
                             </button>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -306,45 +271,52 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
+                                                        <td>id</td>
+                                                        <td>URL</td>
+                                                        <td>Entero</td>
+                                                        <td>Si</td>
+                                                        <td>ID del producto</td>
+                                                    </tr>
+                                                    <tr>
                                                         <td>SKU</td>
                                                         <td>Body</td>
                                                         <td>Cadena</td>
-                                                        <td>Si</td>
+                                                        <td>No</td>
                                                         <td>Numero de referencia del producto</td>
                                                     </tr>
                                                     <tr>
                                                         <td>modelo</td>
                                                         <td>Body</td>
                                                         <td>Cadena</td>
-                                                        <td>Si</td>
+                                                        <td>No</td>
                                                         <td>Modelo del producto</td>
                                                     </tr>
                                                     <tr>
                                                         <td>departamento</td>
                                                         <td>Body</td>
                                                         <td>Cadena</td>
-                                                        <td>Si</td>
+                                                        <td>No</td>
                                                         <td>Departamento al que pertenece el producto</td>
                                                     </tr>
                                                     <tr>
                                                         <td>descripcion</td>
                                                         <td>Body</td>
                                                         <td>Cadena</td>
-                                                        <td>Si</td>
+                                                        <td>No</td>
                                                         <td>Breve descripción del producto</td>
                                                     </tr>
                                                     <tr>
                                                         <td>MX</td>
                                                         <td>Body</td>
                                                         <td>Cadena</td>
-                                                        <td>Si</td>
+                                                        <td>No</td>
                                                         <td>Valor del producto en pesos mexicanos</td>
                                                     </tr>
                                                     <tr>
                                                         <td>US</td>
                                                         <td>Body</td>
                                                         <td>Cadena</td>
-                                                        <td>Si</td>
+                                                        <td>No</td>
                                                         <td>Valor del producto en dólares americanos</td>
                                                     </tr>
                                                 </tbody>
@@ -387,7 +359,7 @@
                             <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                 data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                 <p class="btn btn-outline-primary btn-lg disabled m-2">GET</p>
-                                <p class="fs-4 m-2">End point</p>
+                                <p class="fs-4 m-2">/search/id</p>
                             </button>
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -411,46 +383,11 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>SKU</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
+                                                        <td>id</td>
+                                                        <td>URL</td>
+                                                        <td>Entero</td>
                                                         <td>Si</td>
-                                                        <td>Numero de referencia del producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>modelo</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Modelo del producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>departamento</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Departamento al que pertenece el producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>descripcion</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Breve descripción del producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>MX</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Valor del producto en pesos mexicanos</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>US</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Valor del producto en dólares americanos</td>
+                                                        <td>ID del producto</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -492,7 +429,7 @@
                             <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                 data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                 <p class="btn btn-outline-info btn-lg disabled m-2">POST</p>
-                                <p class="fs-4 m-2">End point</p>
+                                <p class="fs-4 m-2">/add-review/id</p>
                             </button>
                         </h2>
                         <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -516,46 +453,25 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>SKU</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
+                                                        <td>id</td>
+                                                        <td>URL</td>
+                                                        <td>Entero</td>
                                                         <td>Si</td>
-                                                        <td>Numero de referencia del producto</td>
+                                                        <td>ID del producto al que se agregara la reseña</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>modelo</td>
+                                                        <td>calificacion</td>
                                                         <td>Body</td>
                                                         <td>Cadena</td>
                                                         <td>Si</td>
-                                                        <td>Modelo del producto</td>
+                                                        <td>Puntaje del producto de 1 a 5</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>departamento</td>
+                                                        <td>texto</td>
                                                         <td>Body</td>
                                                         <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Departamento al que pertenece el producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>descripcion</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Breve descripción del producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>MX</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Valor del producto en pesos mexicanos</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>US</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Valor del producto en dólares americanos</td>
+                                                        <td>No</td>
+                                                        <td>Reseña del producto</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -667,7 +583,7 @@
                             <button class="accordion-button collapsed" data-bs-toggle="collapse"
                                 data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                                 <p class="btn btn-outline-primary btn-lg disabled m-2">GET</p>
-                                <p class="fs-4 m-2">End point</p>
+                                <p class="fs-4 m-2">/departamento</p>
                             </button>
                         </h2>
                         <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -691,46 +607,11 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>SKU</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Numero de referencia del producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>modelo</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Modelo del producto</td>
-                                                    </tr>
-                                                    <tr>
                                                         <td>departamento</td>
-                                                        <td>Body</td>
+                                                        <td>URL</td>
                                                         <td>Cadena</td>
                                                         <td>Si</td>
-                                                        <td>Departamento al que pertenece el producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>descripcion</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Breve descripción del producto</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>MX</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Valor del producto en pesos mexicanos</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>US</td>
-                                                        <td>Body</td>
-                                                        <td>Cadena</td>
-                                                        <td>Si</td>
-                                                        <td>Valor del producto en dólares americanos</td>
+                                                        <td>Categoría de productos a consultar</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -758,7 +639,7 @@
                                                     <p>OK</p>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <p>jSON conteniendo todos los productos de una categoría</p>
+                                                    <p>JSON conteniendo todos los productos de una categoría</p>
                                                 </div>
                                             </div>
                                         </div>
